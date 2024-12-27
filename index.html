@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Experience the ultimate luxury at Hotels and Resorts with world-class amenities, beautiful rooms, and breathtaking views.">
+      <meta name="author" content="Hotel Monal Inn">
+      <title>Hotels And Resorts | Luxury at its Best</title>
+   
+      <!-- Swiper.js CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+   
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+      <header class="header">
+         <div class="flex">
+            <a href="#home" class="logo" aria-label="Hotels and Resorts Home">Hotels And Resorts</a>
+            <a href="#availability" class="btn" aria-label="Check room availability">Check Availability</a>
+            <button id="menu-btn" class="fas fa-bars" aria-label="Menu button"></button>
+         </div>
+         <nav class="navbar">
+            <a href="#home" aria-label="Go to Home section">Home</a>
+            <a href="#about" aria-label="Learn more about us">About</a>
+            <a href="#room-reservation" aria-label="Make a reservation">Reservation</a>
+            <a href="#gallery" aria-label="View our gallery">Gallery</a>
+            <a href="#contact" aria-label="Contact us">Contact</a>
+            <a href="#reviews" aria-label="Read our reviews">Reviews</a>
+            
+         </nav>
+      </header>
+
+<!-- header section ends -->
+
+
+<!-- home section starts  -->
+
+<section class="home" id="home" aria-labelledby="home-heading">
+   <h1 id="home-heading" class="visually-hidden"></h1>
+   <div class="swiper home-slider">
+      <div class="swiper-wrapper">
+         <!-- Slide 1 -->
+         <div class="box swiper-slide">
+            <img src="images/room_1.png" alt="Luxurious Rooms">
+            <div class="flex">
+               <h3>Luxurious Rooms</h3>
+               <a href="#availability" class="btn" aria-label="Check room availability">Check Availability</a>
+            </div>
+         </div>
+         <!-- Slide 2 -->
+         <div class="box swiper-slide">
+            <img src="images/home-img-2.jpg" alt="Food and Drinks">
+            <div class="flex">
+               <h3>Foods and Drinks</h3>
+               <a href="#restaurant-reservation" class="btn" aria-label="Make a reservation for dining">Make a Reservation</a>
+            </div>
+         </div>
+         <!-- Slide 3 -->
+         <div class="box swiper-slide">
+            <img src="images/banquet hall.jpg" alt="Luxurious Halls">
+            <div class="flex">
+               <h3>Luxurious Halls</h3>
+               <a href="#contact" class="btn" aria-label="Contact us for more information">Contact Us</a>
+            </div>
+         </div>
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+</section>
+
+<!-- home section ends -->
+
+<!-- availability section starts  -->
+
+<section class="availability" id="availability" aria-labelledby="availability-heading">
+   <h2 id="availability-heading"></h2>
+   <form action="" method="post" aria-label="Room availability form">
+      <div class="flex">
+         <div class="box">
+            <label for="check-in">Check In <span>*</span></label>
+            <input type="date" id="check-in" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <label for="check-out">Check Out <span>*</span></label>
+            <input type="date" id="check-out" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <label for="adults">Adults <span>*</span></label>
+            <select id="adults" name="adults" class="input" required aria-label="Select number of adults">
+               <option value="" disabled selected>Select Adults</option>
+               <option value="1">1 Adult</option>
+               <option value="2">2 Adults</option>
+               <option value="3">3 Adults</option>
+               <option value="4">4 Adults</option>
+               <option value="5">5 Adults</option>
+               <option value="6">6 Adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <label for="children">Children <span>*</span></label>
+            <select id="children" name="children" class="input" required aria-label="Select number of children">
+               <option value="" disabled selected>Select Children</option>
+               <option value="0">0 Child</option>
+               <option value="1">1 Child</option>
+               <option value="2">2 Children</option>
+               <option value="3">3 Children</option>
+               <option value="4">4 Children</option>
+               <option value="5">5 Children</option>
+               <option value="6">6 Children</option>
+            </select>
+         </div>
+         <div class="box">
+            <label for="rooms">Rooms <span>*</span></label>
+            <select id="rooms" name="rooms" class="input" required aria-label="Select number of rooms">
+               <option value="" disabled selected>Select Rooms</option>
+               <option value="1">1 Room</option>
+               <option value="2">2 Rooms</option>
+               <option value="3">3 Rooms</option>
+               <option value="4">4 Rooms</option>
+               <option value="5">5 Rooms</option>
+               <option value="6">6 Rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="Check Availability" name="check" class="btn">
+   </form>
+</section>
+
+<!-- availability section ends -->
+
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="row">
+      <div class="image">
+         <img src="images/about-img-1.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>best staff</h3>
+         <p>Experience the warmth and hospitality of our exceptional team, dedicated to making your stay unforgettable.</p>
+         <a href="#room-reservation" class="btn">make a reservation</a>
+      </div>
+   </div>
+
+   <div class="row revers">
+      <div class="image">
+         <img src="images/about-img-2.jpg" alt="">
+      </div>
+      <div class="content">
+         <h3>best foods</h3>
+         <p>Savor the culinary delights prepared by our skilled chefs, offering a symphony of flavors to tantalize your taste buds.</p>
+         <a href="#contact" class="btn">contact us</a>
+      </div>
+   </div>
+
+   <div class="row">
+      <div class="image">
+         <img src="images/Fireplace.png" alt="">
+      </div>
+      <div class="content">
+         <h3>fireplace</h3>
+         <p>Cozy up by our inviting fireplace, where the crackling flames create the perfect ambiance for relaxation and warmth.</p>
+      </div>
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- services section starts  -->
+
+<section class="services">
+   <div class="box-container">
+      <div class="box">
+         <img src="images/icon-1.png" alt="Food & Drinks">
+         <h3>Food & Drinks</h3>
+         <p>Experience the finest dining options with delicious cuisines.</p>
+      </div>
+      <div class="box">
+         <img src="images/icon-2.png" alt="Outdoor Dining">
+         <h3>Outdoor Dining</h3>
+         <p>Enjoy breathtaking views while dining outdoors.</p>
+      </div>
+      <div class="box">
+         <img src="images/icon-3.png" alt="Banquet Hall">
+         <h3>Banquet Hall</h3>
+         <p>Perfect venues for weddings, conferences, and celebrations.</p>
+      </div>
+      <div class="box">
+         <img src="images/icon-4.png" alt="Decorations">
+         <h3>Decorations</h3>
+         <p>Customized themes to suit any occasion.</p>
+      </div>
+      <div class="box">
+         <img src="images/icon-6.png" alt="Private Cabins">
+         <h3>Private Cabins</h3>
+         <p>Individually designed cabins for your comfort.</p>
+      </div>
+      <div class="box">
+         <img src="images/icon-5.png" alt="Mountain View">
+         <h3>Mountain View</h3>
+         <p>Experience serene landscapes and breathtaking views.</p>
+      </div>
+   </div>
+</section>
+
+<!-- services section ends -->
+
+<!-- room price section starts  -->
+
+<section class="room-price" id="room-price">
+
+   <h2>Room Prices</h2>
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>Standard Room</h3>
+         <p>$150</p>
+         <ul>
+            <li>Double Bed</li>
+            <li>Breakfast Included</li>
+            <li>24-hour Room Service</li>
+         </ul>
+         <a href="#room-reservation" class="btn">Book Now</a>
+      </div>
+
+      <div class="box">
+         <h3>Deluxe Room</h3>
+         <p>$200</p>
+         <ul>
+            <li>Mini Bar</li>
+            <li>Double Bed</li>
+            <li>Breakfast Included</li>
+            <li>24-hour Room Service</li>
+         </ul>
+         <a href="#room-reservation" class="btn">Book Now</a>
+      </div>
+
+      <div class="box">
+         <h3>Full Wooden Room</h3>
+         <p>$300</p>
+         <ul>
+            <li>Mini Bar</li>
+            <li>Kids' Meal</li>
+            <li>Double Bed</li>
+            <li>Breakfast Included</li>
+            <li>24-hour Room Service</li>
+         </ul>
+         <a href="#room-reservation" class="btn">Book Now</a>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- room price section ends  -->
+
+<!-- Extras Secrion starts -->
+
+<section id="extras">
+   <h2>Extras</h2>
+   <div class="box-container">
+      <div class="box">
+         <h3>Free Wi-Fi</h3>
+         <p>Stay connected with family, friends, and work with our fast and reliable complimentary WiFi, available throughout the hotel.</p>
+      </div>
+      <div class="box">
+         <h3>Complimentary Breakfast</h3>
+         <p>Start your day off right with a delicious breakfast featuring a variety of hot and cold dishes, fresh fruites, etc</p>
+      </div>
+      <div class="box">
+         <h3>24-hour Room Service</h3>
+         <p>Indulge in your cravings at any hour with our 24-hour room service, offering a menu of tasty and satisfying options to enjoy.</p>
+      </div>
+      <div class="box">
+         <h3>Free Parking</h3>
+         <p>Park your vehicle with ease and convenience, complimentary parking available for all our guests.</p>
+      </div>
+      <div class="box">
+         <h3>Kids Play Area</h3>
+         <p>Let your little ones unleash their energy and creativity in our safe and fun play area, designed for kids of all ages</p>
+      </div>
+   </div>
+</section>
+
+<!-- Extras Secrtion ends -->
+
+<!-- functions section starts -->
+
+<section class="functions" id="functions">
+   <h2>Functions</h2>
+   <div class="box-container">
+     <div class="box">
+       <h3>Wedding</h3>
+       <p>Celebrate your dream wedding with us, where every detail is crafted with love to create memories that last a lifetime.</p>
+       
+       <a href="#contact" class="btn">Inquire Now</a>
+     </div>
+     <div class="box">
+       <h3>Birthday Parties</h3>
+       <p>Throw a birthday bash like no other, with our personalized services and stunning decorations to make your special day extraordinary.</p>
+       
+       <a href="#contact" class="btn">Inquire Now</a>
+     </div>
+     <div class="box">
+       <h3>Kitty Parties</h3>
+       <p>Gather your friends for an unforgettable kitty party, filled with laughter, great food, and delightful experiences in a chic setting.</p>
+      
+       <a href="#contact" class="btn">Inquire Now</a>
+     </div>
+   </div>
+ </section>
+ 
+<!-- functions section ends -->
+
+
+
+<!-- Room Reservation Section -->
+
+<section class="reservation" id="room-reservation">
+   <form id="room-reservation-form" method="post">
+     <h3>Make a Room Reservation</h3>
+     <div class="flex">
+       <div class="box">
+         <p>Check-in <span>*</span></p>
+         <input type="date" id="check-in" name="check_in" class="input" required aria-label="Check-in date">
+       </div>
+       <div class="box">
+         <p>Check-out <span>*</span></p>
+         <input type="date" id="check-out" name="check_out" class="input" required aria-label="Check-out date">
+       </div>
+       <div class="box">
+         <p>Adults <span>*</span></p>
+         <select id="adults" name="adults" class="input" required aria-label="Number of adults">
+           <option value="">Select</option>
+           <option value="1">1 adult</option>
+           <option value="2">2 adults</option>
+           <option value="3">3 adults</option>
+           <option value="4">4 adults</option>
+           <option value="5">5 adults</option>
+           <option value="6">6 adults</option>
+         </select>
+       </div>
+       <div class="box">
+         <p>Children <span>*</span></p>
+         <select id="children" name="childs" class="input" required aria-label="Number of children">
+           <option value="">Select</option>
+           <option value="0">0 child</option>
+           <option value="1">1 child</option>
+           <option value="2">2 children</option>
+           <option value="3">3 children</option>
+           <option value="4">4 children</option>
+           <option value="5">5 children</option>
+           <option value="6">6 children</option>
+         </select>
+       </div>
+       <div class="box">
+         <p>Rooms <span>*</span></p>
+         <select id="rooms" name="rooms" class="input" required aria-label="Number of rooms">
+           <option value="">Select</option>
+           <option value="1">1 room</option>
+           <option value="2">2 rooms</option>
+           <option value="3">3 rooms</option>
+           <option value="4">4 rooms</option>
+           <option value="5">5 rooms</option>
+           <option value="6">6 rooms</option>
+         </select>
+       </div>
+     </div>
+     <!-- Submit Button -->
+     <button type="submit" class="btn">Check Room Availability</button>
+   </form>
+ </section>
+ 
+<!-- Room reservation section ends -->
+
+<section class="reservation" id="restaurant-reservation">
+   <form id="restaurant-reservation-form" method="post">
+     <h3>Make a Restaurant Table Reservation</h3>
+     <div class="restaurant-reservation-details">
+       <div class="box">
+         <p>Date <span>*</span></p>
+         <input type="date" id="table-date" name="restaurant_date" class="input" aria-label="Restaurant reservation date" required>
+       </div>
+       <div class="box">
+         <p>Time <span>*</span></p>
+         <input type="time" id="table-time" name="restaurant_time" class="input" aria-label="Restaurant reservation time" required>
+       </div>
+       <div class="box">
+         <p>Number of Guests <span>*</span></p>
+         <select id="table-guests" name="restaurant_guests" class="input" aria-label="Number of restaurant guests" required>
+           <option value="">Select</option>
+           <option value="1">1 guest</option>
+           <option value="2">2 guests</option>
+           <option value="3">3 guests</option>
+           <option value="4">4 guests</option>
+           <option value="5">5 guests</option>
+           <option value="6">6 guests</option>
+           <option value="7">7 guests</option>
+           <option value="8">8 guests</option>
+           <option value="9">9 guests</option>
+           <option value="10">10 guests</option>
+           <option value="11">11 guests</option>
+           <option value="12">12 guests</option>
+           <option value="13">13 guests</option>
+           <option value="14">14 guests</option>
+           <option value="15">15 guests</option>
+         </select>
+       </div>
+     </div>
+     <!-- Submit Button -->
+     <button type="submit" class="btn">Check Table Availability</button>
+   </form>
+</section>
+ 
+
+<!-- cancellation section starts -->
+<section id="cancellation" class="cancellation-section">
+   <div class="container">
+      <h2>Cancel Your Booking</h2>
+      <p>Please fill in the details to cancel your room booking or table reservation.</p>
+
+      <!-- Room Booking Cancellation Form -->
+      <form id="room-cancellation-form" class="cancellation-form">
+         <h3>Room Booking Cancellation</h3>
+         <label for="room-booking-id">Booking ID:</label>
+         <input type="text" id="room-booking-id" name="roomBookingId" placeholder="Enter your booking ID" required>
+
+         <label for="room-email">Email:</label>
+         <input type="email" id="room-email" name="email" placeholder="Enter your email" required>
+
+         <label for="room-phone">Phone Number:</label>
+         <input type="tel" id="room-phone" name="phone" placeholder="Enter your phone number" required>
+
+         <button type="submit">Cancel Room Booking</button>
+      </form>
+
+      <!-- Restaurant Table Reservation Cancellation Form -->
+      <form id="table-cancellation-form" class="cancellation-form">
+         <h3>Restaurant Table Cancellation</h3>
+         <label for="table-reservation-id">Reservation ID:</label>
+         <input type="text" id="table-reservation-id" name="reservationId" placeholder="Enter your reservation ID" required>
+
+         <label for="table-email">Email:</label>
+         <input type="email" id="table-email" name="email" placeholder="Enter your email" required>
+
+         <label for="table-phone">Phone Number:</label>
+         <input type="tel" id="table-phone" name="phone" placeholder="Enter your phone number" required>
+
+         <button type="submit">Cancel Table Reservation</button>
+      </form>
+   </div>
+</section>
+<!-- cancellation section ends -->
+
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+   <div class="swiper gallery-slider">
+      <div class="swiper-wrapper">
+         <img src="images/room_1.png" class="swiper-slide" alt="Gallery Image 1">
+         <img src="images/room_2.jpg" class="swiper-slide" alt="Gallery Image 2">
+         <img src="images/room_3.jpg" class="swiper-slide" alt="Gallery Image 3">
+         <img src="images/room_4.jpg" class="swiper-slide" alt="Gallery Image 4">
+         <img src="images/private cabin.jpg" class="swiper-slide" alt="Gallery Image 5">
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <div class="row">
+
+      <form action="" method="post">
+         <h3>Send Us a Message</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="Enter your name" class="box" aria-label="Name">
+         <input type="email" name="email" required maxlength="50" placeholder="Enter your email" class="box" aria-label="Email">
+         <input type="tel" name="number" required pattern="[0-9]{10}" placeholder="Enter your number" class="box" aria-label="Phone number">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="Enter your message" cols="30" rows="10" aria-label="Message"></textarea>
+         <input type="submit" value="Send Message" name="send" class="btn" aria-label="Send message">
+      </form>
+
+      <div class="faq">
+         <h3 class="title">Frequently Asked Questions</h3>
+         <div class="box active">
+            <h3>How to cancel?</h3>
+            <p>We understand plans can change! To cancel your booking or reservation, simply visit our Cancellation Section, enter your Booking ID/Reservation ID and the email address you used for the booking. If you need further assistance, feel free to reach out to us—we’re always happy to help.</p>
+         </div>
+         <div class="box">
+            <h3>Is there any vacancy?</h3>
+            <p>We’d love to have you stay with us or dine at our restaurant! To check current room availability or table reservations, please visit our Booking/Reservation Section or contact us directly. We’ll ensure you find the perfect spot for your plans.</p>
+         </div>
+         <div class="box">
+            <h3>What are payment methods?</h3>
+            <p>We strive to make payments easy and secure for you. We accept:
+               Credit/Debit Cards (Visa, MasterCard, etc.)
+               UPI Payments
+               Online Wallets (PayPal, Google Pay, etc.)
+               Bank Transfers (for special cases)
+               For any payment-related queries, feel free to contact us.</p>
+         </div>
+         <div class="box">
+            <h3>How to claim coupon codes?</h3>
+            <p>Enjoying savings is simple! During the booking or reservation process, you’ll see a field labeled “Apply Coupon”. Enter your code, and the discount will automatically apply. If you encounter any issues, let us know, and we’ll ensure you get the best deal.</p>
+         </div>
+         <div class="box">
+            <h3>What are the age requirements?</h3>
+            <p>We want everyone to feel welcome! However, guests under 18 years must be accompanied by a parent or guardian. For dining reservations, all ages are welcome. If you have specific concerns, feel free to reach out—we’d be delighted to assist.</p>
+         </div>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+
+<!-- reviews section starts -->
+<section class="reviews" id="reviews">
+   <h2>Reviews</h2>
+   <div class="swiper-container" id="review-slider">
+      <div class="swiper-wrapper">
+         <!-- Review Slides will be added here -->
+      </div>
+      <div class="swiper-pagination"></div>
+   </div>
+   <!-- Add Review Form -->
+   <div class="add-review">
+      <h3>Write a Review</h3>
+      <form id="review-form">
+         <input type="text" id="name" name="name" placeholder="Your Name" required>
+         <div class="rating">
+            <div class="stars">
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+               <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <input type="hidden" id="rating" name="rating" value="0">
+         </div>
+         <textarea id="review" name="review" placeholder="Your Review" required></textarea>
+         <button type="submit">Submit</button>
+         <p id="error-message" class="error-message">Please fill in all fields.</p>
+      </form>
+   </div>
+</section>
+
+
+<!-- location and directions section starts -->
+
+<section class="location-directions">
+   <h2>Location & Directions</h2>
+   <div class="location-content">
+       <div class="address">
+           <h3>Getting Here</h3>
+           <p>Hotel Monal Inn, Near Pithoragarh Road, Uttarakhand, India</p>
+           <a href="https://www.google.co.in/maps/place/Hotel+Monal+Inn/@29.4060277,80.0901952,17z/data=!3m1!4b1!4m9!3m8!1s0x39a0e185da5a87d7:0xc5f6767c273e7525!5m2!4m1!1i2!8m2!3d29.4060277!4d80.0927701!16s%2Fg%2F11pf09_y3c?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D" 
+               target="_blank" 
+               rel="noopener noreferrer"> &rsaquo;</a>
+       </div>
+       <div class="map">
+           <iframe 
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13793.282872233123!2d80.09019520000001!3d29.4060277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a0e185da5a87d7%3A0xc5f6767c273e7525!2sHotel%20Monal%20Inn!5e0!3m2!1sen!2sin!4v1694785768715!5m2!1sen!2sin" 
+               width="100%" 
+               height="300" 
+               class="google-map" 
+               title="Google Map showing the location of Hotel Monal Inn">
+           </iframe>
+       </div>
+   </div>
+</section>
+
+<!-- location and directions section ends -->
+
+
+
+<!-- Footer Section -->
+<footer class="footer">
+   <div class="box-container">
+      <!-- Contact Information -->
+      <div class="box">
+         <h3>Contact Us</h3>
+         <a href="tel:1234567890" aria-label="Call us at +91-7579277777"><i class="fas fa-phone"></i> +91-7579277777</a>
+         <a href="mailto:hotelmonalinn777@gmail.com" aria-label="Email us at hotelmonalinn777@gmail.com"><i class="fas fa-envelope"></i> hotelmonalinn777@gmail.com</a>
+         <a href="https://www.google.com/maps?ll=29.406028,80.09277&z=14&t=m&hl=en&gl=IN&mapclient=embed&cid=14264719145349051685" target="_blank" rel="noopener noreferrer"><i class="fas fa-map-marker-alt"></i> Pancheswar Rd, Lohaghat, Uttarakhand 262524, INDIA</a>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="back-to-top">
+         <a href="#" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+         </a>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="box">
+         <h3>Follow Us</h3>
+         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i> Facebook</a>
+         
+         <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i> Instagram</a>
+         
+      </div>
+   </div>
+
+   <!-- Copyright Section -->
+   <div class="credit">
+      <p>&copy; 2024 Hotel Monal Inn. All Rights Reserved | Designed by <a href="#">Rakshit Rai</a></p>
+   </div>
+</footer>
+<!-- Footer Section Ends -->
+
+
+<!-- Add FontAwesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<!-- Swiper.js CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+<!-- Custom JS files -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

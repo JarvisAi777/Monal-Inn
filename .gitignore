@@ -1,0 +1,17 @@
+# Ignore Windows system files and directories
+**/AppData/
+**/Documents/
+**/Downloads/
+**/OneDrive/
+**/Pictures/
+**/Videos/
+**/Saved Games/
+**/.VirtualBox/
+**/.bash_history
+**/.cache/
+**/.chocolatey/
+**/.codeium/
+**/.dotnet/
+**/.gitconfig
+**/.vscode/
+*.log
